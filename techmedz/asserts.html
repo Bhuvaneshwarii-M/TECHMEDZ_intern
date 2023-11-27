@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techmedz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .topnav {
+      background-color: #fff;
+      position: fixed;
+      width: 100%;
+      height: 60px;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topnav a {
+      float: right;
+      display: block;
+      color: #094FB7;
+      text-align: center;
+      padding: 20px 30px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .topnav .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav a {
+        display: none;
+      }
+
+      .topnav a.icon {
+        float: right;
+        display: block;
+        margin-top: 10px;
+      }
+
+      .topnav.responsive {
+        position: fixed;
+        display: block;
+      }
+
+      .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+
+      .topnav.responsive img {
+        display: none;
+      }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        background-color: #fff;
+      }
+
+      .topnav.responsive .homeNav {
+        padding-top: 33px;
+      }
+    }
+
+
+    .page1{
+        display: flex;
+      
+    }
+    .intern-content{
+      padding-left: 133px;
+      margin-top: 200px;
+      width: 400px;
+     height: auto;
+    }
+    .intern-content h1{
+       color:rgb(45,29,97);
+      
+    }
+    .intern-content h5{
+      text-wrap:wrap;
+      font-size: 15px;
+      margin-top: 25px;
+    }
+    .intern-content button{
+      margin-top: 25px;
+      font-size: 20px;
+      background-color: rgb(9, 79, 183);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 6px;
+    }
+    .hero-sec{
+      margin-top: 50px;
+      margin-left: 33px;
+    }
+    .hero-sec img{
+      margin-top: 60px;
+      border-radius: 133px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+       width: 450px;
+       height: 450px;
+       margin-left: 133px;
+
+
+    }
+
+    .bsection1 {
+      overflow: hidden;
+      width: 100%;
+      height: 100vh;
+    }
+    @media screen and (max-width:600px){
+      .bsection1 {
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+     
+    }
+      .intern-content{
+       margin-top: 130px;
+      padding-left: 30px;
+      padding-top: 0px;
+    }
+    .intern-content h2{
+      font-size: 20px;
+       color:rgb(45,29,97);
+    }
+    .intern-content h5{
+      font-size: 13px;
+      margin-top: 12px;
+      width: 230px;
+    }
+    .intern-content button{
+      margin-top: 12px;
+      font-size: 10px;
+      background-color: rgb(9, 79, 183);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 6px;
+      
+    }
+    .hero-sec{
+      margin-top: 27px;
+      margin-left: 0px;
+      margin-right:23px
+    }
+    .hero-sec img{
+       
+       width: 140px;
+       height: 140px;
+       margin-top: 119px;
+       margin-left: 0px;
+       
+       
+
+    }
+     
+    }
+
+    .bsection2 {
+      
+      width: 100%;
+      height: 100vh;
+    }
+    .sec2-part1{
+      display: flex;
+      margin-left: 33px;
+      padding-left: 93px;
+      gap: 93px;
+    }
+    .sec2-part1 h2{
+      margin-top: 193px;
+      height: auto;
+     
+      
+    }
+    .sec2-part1 p{
+      width: 350px;
+      padding-top: 7px
+    }
+    .sec2-div1 button{
+        font-size: 17px;
+        margin-top: 7px;
+        padding: 6px;
+        border: none;
+        background-color: #094FB7;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .sec2-div2{
+      display: grid;
+      grid-template-rows: 200px 200px; 
+      grid-template-columns: 270px 270px; 
+      gap: 15px; 
+      margin-top: 73px;
+      font-size: 17px;
+      
+       
+    }
+    .card1{
+      background-color: none;
+      padding: 23px;
+      border-radius: 33px;
+      padding-left: 35px;
+      height: 170px;
+     
+    }
+    .card1:hover{
+      background-color: rgb(240, 236, 236);
+      
+     
+    }
+    .card1 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+      .card1 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card1 button{
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 48px;
+      color: #094FB7;
+    }
+    .card1 p{
+      height: auto;
+      width: 210px;
+      padding-top: 8PX;
+      padding-bottom: 8px;
+      
+    }
+    
+    .card2{
+      background-color:none;
+      padding: 27px;
+      border-radius: 33px;
+      height: 170px;
+     
+    }
+    .card2 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+   
+    .card2 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card2 button{
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 48px;
+      color: #094FB7;
+      
+    }
+    .card2 p{
+      height: auto;
+      width: 210px;
+      padding-top: 8PX;
+      padding-bottom: 8px;
+      
+    }
+    .card2:hover{
+      background-color: rgb(240, 236, 236);
+    }
+    .card3{
+      background-color: none;
+      padding: 27px;
+      border-radius: 33px;
+      height: 170px;
+     
+    }
+    .card3 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+    .card3 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card3:hover{
+      background-color: rgb(240, 236, 236);
+    }
+    .card3 button{
+      background-color:transparent;
+      border: none;
+      font-size: 16px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 48px;
+      color: #094FB7;
+    }
+    .card3 p{
+      height: auto;
+      width: 210px;
+      padding-top: 8PX;
+      padding-bottom: 8px;
+      
+    }
+    .card4{
+      background-color: none;
+      padding: 27px;
+      border-radius: 33px;
+      height: 170px;
+     
+    }
+    .card4 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+    .card4 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card4:hover{
+      background-color: rgb(240, 236, 236);
+    }
+    .card4 button{
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 48px;
+      color: #094FB7;
+    }
+    .card4 p{
+      height: auto;
+      width: 210px;
+      padding-top: 8PX;
+      padding-bottom: 8px;
+      
+    }
+    .sec2-part2{
+       display: flex;
+       gap: 112px;
+       margin-left: 130px;
+       margin-top: 43px;
+    }
+    .count1 h3{
+        font-size: 32px;
+        color: #094FB7;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+    .count2 h3{
+        font-size: 32px;
+        color: #094FB7;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+    .count3 h3{
+        font-size: 32px;
+        color: #094FB7;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+    .count4 h3{
+        font-size: 32px;
+        color: #094FB7;
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+   
+@media screen and (max-width:600px){
+                 
+    .bsection2 {
+      overflow: hidden;
+      width: 100%;
+      height: 130vh;
+      padding-left: 0px;
+      margin-top: 39px;
+      
+     
+    }
+    .sec2-part1{
+      display: flex;
+      flex-direction: column;
+      gap: 33px;
+      padding-left: 0px;
+   
+    }
+    .sec2-part1 h2{
+      margin-top: 30px;
+      height: auto;
+      font-size: 20px;
+    
+      
+    }
+    .sec2-part1 p{
+      width: 380px;
+      padding-top: 7px;
+      font-size: 13px;
+    }
+    .sec2-div1 button{
+        font-size: 10px;
+        margin-top: 15px;
+        margin-left: 133px;
+        padding: 6px;
+        border: none;
+        background-color: #094FB7;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 0px;
+    }
+    .sec2-div2{
+      display: grid;
+      grid-template-rows: 150px 150px; 
+      grid-template-columns: 170px 170px; 
+      gap: 50px; 
+      
+      font-size: 13px;
+      margin-top: 0px;
+      
+       
+    }
+    .card1{
+      background-color: none;
+      padding: 0px;
+      border-radius: 30px;
+      padding-left: 0px;
+      height: 150px;
+      
+     
+     
+    }
+    .card1:hover{
+      background-color: rgb(240, 236, 236);
+      padding: 10px;
+     
+      height: 170px;
+     
+    }
+    .card1 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+      .card1 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card1 button{
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 20px;
+      color: #094FB7;
+    }
+    .card1 p{
+      height: auto;
+      width: 160px;
+      padding-top: 7PX;
+      padding-bottom: 6px;
+    }
+    
+    .card2{
+      background-color: none;
+      padding: 0px;
+      border-radius: 30px;
+      padding-left: 0px;
+      height: 150px;
+      
+     
+    }
+    .card2 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+   
+    .card2 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card2 button{
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 20px;
+      color: #094FB7;
+      
+    }
+    .card2 p{
+      height: auto;
+      width: 160px;
+      padding-top: 7PX;
+      padding-bottom: 6px;
+      
+    }
+    .card2:hover{
+      background-color: rgb(240, 236, 236);
+      padding: 10px;
+     
+      height: 170px;
+    }
+    .card3{
+      background-color: none;
+      padding: 0px;
+      border-radius: 30px;
+      padding-left: 0px;
+      height: 150px;
+      
+     
+    }
+    .card3 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+    .card3 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card3:hover{
+      background-color: rgb(240, 236, 236);
+      padding: 10px;
+     
+      height: 170px;
+    }
+    .card3 button{
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 20px;
+      color: #094FB7;
+    }
+    .card3 p{
+      height: auto;
+      width: 160px;
+      padding-top: 7PX;
+      padding-bottom: 6px;
+      
+    }
+    .card4{
+      background-color: none;
+      padding: 0px;
+      border-radius: 30px;
+      padding-left: 0px;
+      height: 150px;
+      
+     
+    }
+    .card4 .icon{
+      height: 33px;
+      width: 33px;
+      background-color: #c9d8f1;
+      border-radius: 5px;
+      text-align: center;
+          }
+    .card4 .icon i{
+        padding-top: 8px;
+        font-size: 20px;
+      }
+    .card4:hover{
+      background-color: rgb(240, 236, 236);
+      padding: 10px;
+     
+      height: 170px;
+    }
+    .card4 button{
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      padding: 6px;
+      border-radius: 7px;
+      margin-left: 20px;
+      color: #094FB7;
+    }
+    .card4 p{
+      height: auto;
+      width: 160px;
+      padding-top: 7px;
+      padding-bottom: 6px;
+      
+    }
+ 
+    .count1 h3{
+        font-size: 22px;
+        color: #094FB7;
+        font-weight: 100;
+       
+    }
+    .count2 h3{
+        font-size: 22px;
+        color: #094FB7;
+        font-weight: 100;
+       
+    }
+    .count3 h3{
+        font-size: 22px;
+        color: #094FB7;
+        font-weight: 100;
+       
+    }
+    .count4 h3{
+        font-size: 22px;
+        color: #094FB7;
+        font-weight: 100;
+       
+    }
+    .sec2-part2{
+      display: flex;
+     gap: 10px;
+      font-size: 10px;
+     margin-left: 90px;
+     width: 250px;
+    }
+}
+   
+   
+
+    .bsection3 {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+    
+    }
+    .sec3-part1{
+      margin-left: 113px;
+      display: flex;
+      margin-top: 60px;
+      gap: 133px;
+      
+    }
+    .sec3-div1 img{
+          padding-top: 0px;
+          margin-left: 22px;
+         height: 300px;
+         width: 400px;
+         border-radius: 33px;
+    }
+    .sec3-part1 .sec3-div2{
+      width: 500px;
+      margin-top: 89px;
+     
+    }
+    .sec3-part2{
+      
+      margin-left: 138px;
+      margin-top: 0px;
+      width: 1600px;
+    
+    }
+    .sec3-cards{
+      display: flex;
+      
+     
+    }
+    .sec3-card1{
+      width: 250px;
+    }
+    .sec3-card2{
+      width: 250px;
+    }
+    .sec3-card3{
+      width: 250px;
+    }
+    .sec3-card4{
+      width: 250px;
+    }
+    .sec3-heading h1{
+     margin-left: 433px;
+     margin-bottom: 23px;
+      }
+   
+      @media screen and (max-width:600px){
+        .bsection3 {
+      overflow: hidden;
+      display: flex;
+     
+      width: 100%;
+      height: 135vh;
+    
+    }
+    .sec3-part1{
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 0px;
+      gap: 0px;
+      
+    }
+    .sec3-div1{
+     
+      gap: 0px;
+    }
+    .sec3-div1 img{
+         
+          margin-top: 0px;
+          margin-left: 73px;
+         height: 200px;
+         width: 300px;
+         border-radius: 33px;
+    }
+    .sec3-part1 .sec3-div2{
+      width: 270px;
+      margin-top: 9px;
+      margin-left: 93px;
+     
+    }
+    .sec3-part2{
+      padding-top: 0px;
+      margin-left: 18px;
+      margin-top: 0px;
+      
+    
+    }
+    .sec3-cards{
+      display: grid;
+      grid-template-columns: 130px 130px;
+      grid-template-rows: 130px 130px;
+      margin-top: 0px;
+      gap: 55px;
+      margin-left: 35px;
+      
+    }
+    .sec3-card1{
+      width: 170px;
+     
+
+      
+    }
+    .sec3-card2{
+      width: 170px;
+    }
+    .sec3-card3{
+      width: 170px;
+    }
+    .sec3-card4{
+      width: 170px;
+    }
+    .sec3-heading h1{
+     margin-left: 433px;
+     margin-bottom: 23px;
+      }
+   
+      }
+    .bsection4 {
+
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .bg {
+      width: 100%;
+      height: 500px;
+      background-color: rgb(9, 79, 183);
+      transform: skew(0deg, -5deg);
+      transform-origin: bottom left;
+
+
+    }
+
+    .bcontent1 {
+      justify-content: center;
+      padding-top: 110px;
+      color: white;
+      transform: skew(0deg, 5deg);
+      padding-left: 143px;
+
+
+    }
+
+
+    .blines1 h2 {
+      font-size: 28px;
+      line-height: 30px;
+      margin-bottom: 23px;
+    }
+
+    .blines1 h5 {
+      margin-bottom: 20px;
+      font-weight: 100;
+    }
+
+    .blines2 h4 {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .sub {
+      position: relative;
+      height: 28px;
+      width: 310px;
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      gap: 12px;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 9px;
+
+
+    }
+
+    .sub input {
+      border: none;
+      height: 25px;
+      width: 200px;
+      outline: none;
+    }
+
+    .sub i {
+      position: relative;
+      z-index: 1;
+      color: rgb(59, 80, 185);
+      font-weight: 1000px;
+      font-size: 15px;
+    }
+
+    .sub button {
+      background-color: rgb(9, 79, 183);
+      color: white;
+      border: none;
+      height: 18px;
+      width: 60px;
+      border-radius: 3px;
+    }
+
+    .blines3 .bmail {
+      height: 40px;
+      width: 40px;
+      border-radius: 32px;
+      background-color: rgba(78, 125, 196, 0.3);
+
+    }
+
+    .bmail i {
+      padding-left: 11px;
+      padding-top: 12px;
+
+
+    }
+
+    .blines2 {
+      margin-bottom: 25px;
+    }
+
+    .blines3 {
+      display: flex;
+    }
+
+    .innermail {
+      margin-left: 15px;
+      margin-top: 1px;
+      line-height: 18px;
+    }
+
+    .innermail #p1 {
+      font-size: 13px;
+      font-weight: 100;
+    }
+
+    .blines3 {
+      margin-bottom: 0px;
+    }
+
+    .bconnect {
+      display: flex;
+      gap: 8px;
+    }
+
+    .bconnect hr {
+      margin-top: 10px;
+      width: 22px;
+    }
+
+    .fb {
+      height: 27px;
+      width: 27px;
+      background-color: rgba(78, 125, 196, 0.3);
+      border-radius: 50px;
+
+    }
+
+    .fb i {
+      padding-left: 6px;
+      padding-top: 4px;
+
+    }
+
+    .bicons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .fb:hover {
+      background-color: white;
+
+    }
+
+    .box {
+      height: 33px;
+      width: 33px;
+      background-color: rgba(78, 125, 196, 0.3);
+      border-radius: 5px;
+      transform: rotate(12deg);
+      margin-left: 33px;
+    }
+
+    .boxes {
+      display: grid;
+      grid-template-columns: 33px 33px;
+      gap: 3px;
+
+
+    }
+
+    .icon-boxes {
+      display: flex;
+      gap: 7px;
+    }
+
+    .b4col1 {
+      display: flex;
+    }
+
+    .bcontent2 {
+
+      margin-top: 170px;
+      margin-left: 100px;
+      width: 530px;
+      height: 400px;
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+
+      transform: skew(0deg, 5deg);
+
+    }
+
+    .footer-form {
+      padding: 18px;
+      line-height: 39px;
+      font-size: 18px;
+
+
+
+    }
+
+    .footer-form p {
+      line-height: 20px;
+
+    }
+
+    .name-phone {
+      display: flex;
+      gap: 18px;
+
+    }
+
+    .name {
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+    }
+
+    .name input {
+      height: 25px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .phone {
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+
+    }
+
+    .phone input {
+      height: 25px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .email {
+      display: flex;
+      flex-direction: column;
+      width: 460px;
+
+
+    }
+
+    .email input {
+      height: 25px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .msg {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+
+    }
+
+    .msg input {
+      height: 20px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      padding-bottom: 31px;
+      outline: none;
+      /* Adjust the padding as needed */
+
+
+    }
+
+    .req-btn {
+      width: 150px;
+      height: 25px;
+      background-color: rgb(9, 79, 183);
+      color: white;
+      border: none;
+      border-radius: 3px;
+      outline: none;
+      margin-top: 12px;
+
+    }
+
+    .foot-logo {
+      display: flex;
+
+    }
+
+    .footer {
+      display: flex;
+    }
+
+    .footer img {
+
+      padding-left: 20px;
+      height: 120px;
+      width: 130px;
+
+
+    }
+
+    .tech-conn h3 {
+      color: rgb(9, 79, 183);
+    }
+
+    .tech-conn,
+    .pvt-lim,
+    .word {
+      padding-top: 53px;
+
+    }
+
+    .tech-conn {
+      padding: 0;
+      padding-top: 43px;
+    }
+
+    .pvt-lim {
+      padding-left: 233px;
+      padding-top: 57px;
+    }
+
+    .word {
+      display: flex;
+      justify-content: right;
+      margin-left: 260px;
+      gap: 25px;
+      font-weight: 100;
+    }
+
+    @media screen and (max-width:600px) {
+      .bsection4{
+        height: 175vh;
+        transform: skew(0deg,0deg);
+        
+    }
+      
+     .b4col1{
+           display: flex;
+           flex-direction: column; 
+           
+           
+     }
+     .bcontent1{
+      justify-content: center;
+      padding-top: 40px;
+      color: white;
+      transform: skew(0deg,0deg);
+      padding-left: 30px;
+
+     }
+     .footer{
+       padding-top: 533px;
+     }
+     .bg {
+      width: 100%;
+      height: 380px;
+      background-color: rgb(9, 79, 183);
+      transform: skew(0deg,0deg);
+    }
+    .blines1 h2 {
+      font-size: 20px;
+      line-height: 25px;
+      margin-bottom: 19px;
+    }
+
+    .blines1 h5 {
+      margin-bottom: 19px;
+      font-weight: 100;
+    }
+
+    .blines2 h4 {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .blines3 {
+      margin-bottom: 0px;
+    }
+       .bcontent2 {
+
+      margin-top: 50px;
+      margin-left: 15px;
+      width: 400px;
+      
+      background-color: white;
+      color: black;
+      border-radius: 20px;
+     
+      height: auto;
+      transform: skew(0deg, 0deg);
+
+    }
+
+    .footer-form {
+      
+      line-height: 27px;
+      font-size: 15px;
+     
+      
+     }
+
+    .footer-form p {
+      line-height: 20px;
+
+    }
+
+    .name-phone {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .name {
+      
+      width: 210px;
+    }
+
+    .name input {
+      height: 25px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      outline: none;
+     
+    }
+
+    .phone {
+      display: flex;
+      flex-direction: column;
+      width: 210px;
+      gap: 0px;
+
+    }
+
+    .phone input {
+      height: 25px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      outline: none;
+    }
+
+    .email {
+      display: flex;
+      flex-direction: column;
+      width: 210px;
+
+
+    }
+
+    .email input {
+      height: 25px;
+     
+    }
+   .msg input {
+      height: 30px;
+    }
+    .req-btn {
+      width: 140px;
+      height: 35px;
+
+    }
+    .foot-logo {
+      display: flex;
+      
+
+    }
+
+    .footer {
+      display: flex;
+      
+
+    }
+
+    .footer img {
+     
+      margin-left: 0px;
+      padding-left: 0px;
+      margin-top: 0px;
+      padding-top: 0px;
+      height: 100px;
+      width: 110px;
+      
+
+    }
+
+    .tech-conn h3 {
+      color: rgb(9, 79, 183);
+    }
+
+    .tech-conn,
+    .pvt-lim,
+    .word {
+      padding-top: 0px;
+
+    }
+
+    .tech-conn {
+      padding: 0;
+      padding-top: 0px;
+    }
+
+    .pvt-lim {
+      padding-left: 0px;
+      margin-right: 0px;
+      padding-top: 50px;
+    }
+
+    .word {
+      display: flex;
+      
+      justify-content: right;
+      margin-left: 0px;
+      gap: 0px;
+      font-weight: 100;
+      width: 0px;
+    }
+ }
+ 
+      
+   </style>
+</head>
+
+<body>
+  <div class="bsection1">
+    <div class="topnav" id="myTopnav">
+      <img src="logo.png">
+      <a href="#home" class="homeNav">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="page1">       
+           <div class="intern-content">
+                      <h2>Dive into the world of Innovation with TechmedZ Labs</h2>
+                      <h5>Dr. A.P.J. Abdul Kalam Research internship Program - opportunities aren't just experiences; they're gateways to shaping the future of healthcare while unlocking your full potential in the dynamic realm of biotechnology.</h5>
+                      <button type="submit">Get Started</button>
+           </div>
+           <div class="hero-sec">
+                   <img src="https://ik.imagekit.io/ml7bhhamv/kalam.png.jpg?updatedAt=1701068379012">
+           </div>
+    </div>
+  </div>
+  <div class="bsection2">
+           <div class="sec2-part1">
+                  <div class="sec2-div1">
+                        <h2>Internship Oppurtunities</h2>
+                        <p>Our Interns will be provided with 3 months of internship with all the essentials needed to work based on their applied role and Knowledge. If they Perform well during the Intern Period, they can be extended upto 6 months of internship with Satisifying Stipend.</p>
+                        <button type="submit">Apply Now</button>
+                  </div>
+                  <div class="sec2-div2">
+                          <div class="card1">
+                                <div class="icon"><i class="fa-solid fa-pen-nib" style="color: #2c64c3;"></i></i></div>
+                                <h3>UX/UI DESIGN</h3>
+                                <p>Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.</p>
+                                <button class="more">Learn More --></button>
+                          </div>
+                          <div class="card2">
+                               <div class="icon"><i class="fa-solid fa-database" style="color: #386ecc;"></i></div>
+                               <h3>Back-end Development</h3>
+                               <p>Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.</p>
+                               <button class="more">Learn More --></button>
+                          </div>
+                          <div class="card3">
+                                <div class="icon"><i class="fa-solid fa-bug" style="color: #3263b8;"></i></div>
+                                <h3>Front-end Development</h3>
+                                <p>Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.</p>
+                                <button class="more">Learn More --></button>
+                          </div>
+                          <div class="card4">
+                               <div class="icon"><i class="fa-solid fa-box" style="color: #386cc7;"></i></div>
+                               <h3>Project Delivery</h3>
+                               <p>Donec mi lorem, consequat a quam nec, pellentesque pulvinar sem. Morbi lacus magna.</p>
+                               <button class="more">Learn More --></button>
+                          </div>
+                  </div>
+ 
+           </div>
+           <div class="sec2-part2">
+                   <div class="count1">
+                       <h3>17+</h3>
+                        <p>PUBLISHED ARTICLES</p>
+                   </div>
+                   <div class="count2">
+                        <h3>23+</h3>
+                        <p>TEAM SIZE</p>
+                   </div>
+                   <div class="count3">
+                    <h3>183+</h3>
+                    <p>ONGOING RESEARCHES</p>
+                  </div>
+                  <div class="count4">
+                    <h3>315+</h3>
+                    <p>COMPLETED PROJECT</p>
+                  </div>
+
+           </div>
+  </div>
+  <div class="bsection3">
+           <div class="sec3-part1">
+                     <div class="sec3-div1">
+                            <img src="https://ik.imagekit.io/ml7bhhamv/A%20group%20of%20friends%20at%20a%20cof....jpg?updatedAt=1701067661915"/>
+                            
+                     </div>
+                     <div class="sec3-div2">
+                        <h1>Grow with us and ENhance 
+                        yourself</h1>
+                        <h5>List a product once and it will be published across all of your connected sales channels. Similarly, when you make changes to your listing</h5>
+                     </div>
+          </div>
+          <div class="sec3-part2">
+              <div class="sec3-heading">
+                 <h1>What Our Interns says</h1>
+              </div>   
+              <div class="sec3-cards">
+                <div class="sec3-card1">
+                       <div class="sec3-profile">
+                               <div class="sec3-icon"></div>
+                               <div class="sec3-names">
+                                     <h3>Name</h3>
+                                     <h5>google</h5>
+                               </div>
+                       </div>
+                       <div class="sec3-says">
+                                <p>“Less than 24h turn around. Easy communication. Did exactly as offered, all around a perfect experience.”</p>
+                       </div>
+                       <div class="sec3-stars">
+
+                       </div>
+                 </div>
+                <div class="sec3-card2">
+                       <div class="sec3-profile">
+                             <div class="sec3-icon"></div>
+                             <div class="sec3-names">
+                                   <h3>Name</h3>
+                                   <h5>google</h5>
+                             </div>
+                       </div>
+                       <div class="sec3-says">
+                                  <p>“Less than 24h turn around. Easy communication. Did exactly as offered, all around a perfect experience.”</p>
+                       </div>
+                       <div class="sec3-stars">
+
+                       </div>
+                </div>
+                <div class="sec3-card3">
+                     <div class="sec3-profile">
+                           <div class="sec3-icon"></div>
+                           <div class="sec3-names">
+                                 <h3>Name</h3>
+                                 <h5>google</h5>
+                            </div>
+                     </div>
+                     <div class="sec3-says">
+                                <p>“Less than 24h turn around. Easy communication. Did exactly as offered, all around a perfect experience.”</p>
+                     </div>
+                     <div class="sec3-stars">
+
+                     </div>
+                </div>
+                <div class="sec3-card4">
+                   <div class="sec3-profile">
+                         <div class="sec3-icon"></div>
+                         <div class="sec3-names">
+                               <h3>Name</h3>
+                               <h5>google</h5>
+                          </div>
+                   </div>
+                   <div class="sec3-says">
+                              <p>“Less than 24h turn around. Easy communication. Did exactly as offered, all around a perfect experience.”</p>
+                   </div>
+                   <div class="sec3-stars">
+
+                    </div>
+                </div>
+           
+         </div>   
+  </div>
+</div>
+
+           </div>
+  </div>
+  <div class="bsection4">
+
+
+
+
+    <div class="bg">
+      <div class="b4col1">
+        <div class="bcontent1">
+          <div class="blines1">
+            <h2>
+              <pre>Have a project idea! 
+Drop me a line.</pre>
+            </h2>
+            <h5>
+              <pre>Aenean vestibulum felis nec egestas fringilla.
+Duis non felis consequat tincidunt nisl.</pre>
+            </h5>
+          </div>
+          <div class="blines2">
+            <h4>Subscribe to our newsletter</h4>
+            <div class="sub"> <i class="fa-solid fa-envelope fa-beat"></i><input type="email"
+                placeholder="Email Address" /><button type="submit">Subscribe</button></div>
+
+          </div>
+          <div class="blines3">
+            <div class="bmail"><i class="fa-regular fa-envelope" style="color: #d3d6db;"></i></div>
+            <div class="icon-boxes">
+              <div class="innermail">
+                <p id="p1">Mail Us</p>
+                <p>techMedz@gmail.com</p>
+
+              </div>
+              <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="blines4">
+            <div class="bconnect">
+              <div>
+                <hr>
+              </div>
+              <p>connect with us:</p>
+            </div>
+
+            <div class="bicons">
+              <div class="fb"><i class="fa-brands fa-facebook-f" style="color: #ffffff;" id="hov"></i></div>
+              <div class="fb"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></div>
+              <div class="fb"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></div>
+              <div class="fb"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></div>
+              <div class="fb"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="bcontent2">
+          <div class="footer-form">
+
+            <h4>Request A Quote — let’s work together.</h4>
+            <p>Got a project? Drop me a line if you want to work together on something exciting. Or do you need our
+              help? Feel free to contact us.</p>
+            <div class="name-phone">
+              <div class="name">
+                <label>Name:</label>
+                <input type="text" placeholder="Enter name">
+              </div>
+              <div class="phone">
+                <label>Phone:</label>
+                <input type="text" placeholder="Enter phone">
+              </div>
+            </div>
+            <div class="email">
+              <label>Email</label>
+              <input type="email" placeholder="Enter email">
+            </div>
+            <div class="msg">
+              <label>Message</label>
+              <input type="text" placeholder="Message">
+            </div>
+
+
+
+            <button type="submit" class="req-btn">Request A Quote --></button>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="bg2">
+      <div class="footer">
+
+           <img src="techmedz.jpg" />
+
+
+        <div class="tech-conn">
+          <h3>TechMedz</h3>
+          <h5>Connecting Lives</h5>
+        </div>
+        <div class="pvt-lim">
+          <p>@2023 TechMedZ PVT.LTD.</p>
+        </div>
+        <div class="word">
+          <p>Privacy Notice</p>
+          <p>Cookie Policy</p>
+          <p>Disclaimer</p>
+        </div>
+
+      </div>
+    
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</body>
+
+</html>
